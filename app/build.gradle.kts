@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.example.branchiohexample"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.branchiohexample"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -39,4 +39,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation("io.branch.sdk.android:library:5.9.0") // Check for latest version before hard-coding
+    implementation("com.google.android.gms:play-services-ads-identifier:18.0.1")
+
 }
